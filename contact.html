@@ -1,11 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Circle | Projects</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-    
+<body class="projects">
+  <nav>
+    <a href="index.html"><img src="assets/logos/circle.svg" width="85" alt="logo" /></a>
+    <ul id="nav-links">
+      <li class="gray"><a href="index.html">Home</a></li>
+      <li class="gray"><a href="#projects">Projects</a></li>
+      <li class="gray"><a href="#services">Services</a></li>
+    </ul>
+    <a id="boton-contacto" href="contact.html">Contact Us</a>
+  </nav>
+
+<!-- ------------------------- -->
+<section class="contact-section">
+    <header class="contact-header">
+      <h1 class="contact">Contact us</h1>
+      </header>
+
+
+      <form class="contact-form">
+        
+      <div class="name">
+        <span class="full-name">Full name</span>
+        <br>
+        <input type="text" placeholder="Enter your full name" required />
+        <p id="errorName" class="errorForm" hidden>Please, complete the field NAME with your name</p>
+      </div>
+        
+      <div class="email-phone">
+        <div class="email">
+            <span class="email">Email</span>
+            <br>
+            <input type="email" placeholder="Enter your email address" required />
+            <p id="errorEmail" class="errorForm" hidden>Invalid email</p>
+            </div>
+        <div class="phone">
+        <span class="phone">Phone</span>
+        <br>
+        <input type="number" placeholder="Enter your phone number" required />
+        <p id="errorPhone" class="errorForm" hidden>Please enter your phone number</p>
+        </div>        
+        </div>
+
+        <div class="message">
+        <span class="message">Message</span>
+        <textarea placeholder="Write your message here..." required></textarea>
+        <p id="errorMessage" class="errorForm" hidden>Write us at least 5 characters</p>
+        </div>
+    <button type="button" onclick="sendForm()" id="submitForm">Submit</button>
+    <p class="errorForm" id="errorSubmit" hidden>PLEASE, REVIEW THE REQUIRED FIELDS</p>
+    </form>
+
+  
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+<!-- --------------------- -->
+
+  <footer>
+    <div class="footer-brand">
+      <img src="assets/logos/circle.svg" alt="logo" />
+      <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+    </div>
+    <div id="footer-links">
+      <a href="#">Team</a>
+      <a href="#">Services</a>
+      <a href="#">About Us</a>
+      <a href="#">Press</a>
+      <a href="#">Projects</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+  </footer>
 </body>
 </html>
