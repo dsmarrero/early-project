@@ -28,7 +28,7 @@ async function getData() {
   
      listaOtros.innerHTML = ""; //vacía el contenedor
     otherProjects.forEach((project) => {
-      //cea la estructura de la tarjeta
+      //crea la estructura de la tarjeta
       const card = `<article class="card">
           <img src="${project.image}" alt="${project.name}" class="card-img" />
           <div class="card-body">

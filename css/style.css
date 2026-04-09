@@ -376,9 +376,8 @@ nav {
   padding-top: 80px;
   padding-bottom: 80px;
   text-align: center;
-   margin: 100px ;
-  margin-left: 5%;
-  margin-right: 5%;
+   margin: 100px auto  ;
+     
 }
 #newsletter-form {
   margin-top: 30px;
