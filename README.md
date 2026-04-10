@@ -34,6 +34,11 @@
 * Gemini
 
 ## Backlog
-* Implementar un menú hamburguesa en la vista responsive
+* ~~Normalizar los márgenes de los elementos de la landing page~~
+* ~~Agregar efecto glow a la imagen del proyecto principal~~
+* ~~Agregar botón Back to top~~
+* ~~Agregar favicon~~
+* ~~Implementar un menú hamburguesa en la vista responsive~~
 * Mejorar la presentación del formulario
 * Agregar una pantalla de confirmación para el envío de los datos del formulario
+* Agregar una página de error 404
