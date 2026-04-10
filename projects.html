@@ -7,24 +7,45 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body class="projects">
-  <nav>
+ <nav id="nav-responsive">
+    <div id="logo-nav">
+    <a href="index.html"><img src="assets/logos/circle.svg" width="85" alt="logo" /></a>
+    </div>
+
+    <input type="checkbox" id="menu-check">
+    <label for="menu-check" class="burger">
+<span class="line-1"></span>
+  <span class="line-2"></span>
+  <span class="line-3"></span>
+        </label>
+
+    <div id="menu-nav">
+    <ul id="nav-links">
+      <li class="gray"><a href="index.html">Home</a></li>
+      <li class="gray"><a href="index.html#projects">Projects</a></li>
+      <li class="gray"><a href="index.html#services">Services</a></li>
+    </ul>
+    <a id="boton-contacto" href="contact.html">Contact Us</a>
+    </div>
+  </nav>
+<nav id="nav-big">
     <a href="index.html"><img src="assets/logos/circle.svg" width="85" alt="logo" /></a>
     <ul id="nav-links">
       <li class="gray"><a href="index.html">Home</a></li>
       <li class="gray"><a href="index.html#projects">Projects</a></li>
-      <li class="gray"><a href="#services">Services</a></li>
+      <li class="gray"><a href="index.html#services">Services</a></li>
     </ul>
     <a id="boton-contacto" href="contact.html">Contact Us</a>
   </nav>
-
   <section class="project-details">
     <header class="project-header">
-      <h1 class="title-project">título proyecto</h1>
+      <h1 class="title-project">Simplify</h1>
       <div class="completion">
-        <h5 class="subtitle-project">subtítulo proyecto</h5>
+        <h5 class="subtitle-project">UI Design & App Development
+</h5>
         <div class="date-container">
           <span class="completed-on">Completed on </span>
-          <span class="date">fecha de finalización</span>
+          <span class="date">June 22, 2021</span>
         </div>
       </div>
     </header>
@@ -34,10 +55,8 @@
     </div>
 
     <article class="project-description">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi cursus venenatis augue ut eleifend. Nullam et tellus leo. In malesuada malesuada enim, sed venenatis erat gravida sed. Maecenas id efficitur erat. Maecenas augue massa, vulputate nec nisi nec, fermentum ornare dolor. Phasellus nec mi nunc. Mauris molestie turpis sed condimentum mollis. In pellentesque ligula eu eleifend tincidunt. Praesent ligula felis, vehicula et venenatis at, varius quis tellus. Pellentesque a sapien a justo hendrerit vulputate. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed aliquam eros at leo blandit, in semper orci faucibus. Integer aliquet sapien eu tellus dictum, ac tempus ipsum porttitor. Mauris at velit a erat venenatis volutpat eget at eros. Curabitur interdum laoreet hendrerit.
-
-</p>
-    </article>
+      <p>Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et! Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt quix duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.<br>Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.Aliqua id fugiat nostrud irure ex duis ea quis id quis ad e dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.Aliqua id fugiat nostrud irure ex duis ea quis id quis ad e dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nis cillum minim tempor enim.</p>
+      </article>
   </section>
 
   <section class="other-projects">
@@ -46,24 +65,24 @@
       <article class="card">
         <img src="assets/projects-section/2.jpg" alt="P2" class="card-img" />
         <div class="card-body">
-          <h4>título proyecto 2</h4>
-          <p>subtítulo proyecto 2</p>
+          <h4>Dashcoin</h4>
+          <p>Web Development</p>
           <a href="projects.html?id=2" class="learn-more">Learn more</a>
         </div>
       </article>
       <article class="card">
         <img src="assets/projects-section/3.jpg" alt="P3" class="card-img" />
         <div class="card-body">
-          <h4>título proyecto 3</h4>
-          <p>subtítulo proyecto 3</p>
+          <h4>Vectorify</h4>
+          <p>User Experience Design</p>
           <a href="projects.html?id=3" class="learn-more">Learn more</a>
         </div>
       </article>
       <article class="card">
         <img src="assets/projects-section/1.jpg" alt="P1" class="card-img" />
         <div class="card-body">
-          <h4>título proyecto 4</h4>
-          <p>subtítulo proyecto 4</p>
+          <h4>Lorem Ipsum</h4>
+          <p>Lorem Ipsum</p>
           <a href="projects.html?id=4" class="learn-more">Learn more</a>
         </div>
       </article>

@@ -4,10 +4,33 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Circle | Home</title>
+ <link rel="shortcut icon" type="image/x-icon" href="./assets/logos/favicon.ico">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <nav>
+
+ <nav id="nav-responsive">
+    <div id="logo-nav">
+    <a href="index.html"><img src="assets/logos/circle.svg" width="85" alt="logo" /></a>
+    </div>
+
+    <input type="checkbox" id="menu-check">
+    <label for="menu-check" class="burger">
+<span class="line-1"></span>
+  <span class="line-2"></span>
+  <span class="line-3"></span>
+        </label>
+
+    <div id="menu-nav">
+    <ul id="nav-links">
+      <li class="gray"><a href="index.html">Home</a></li>
+      <li class="gray"><a href="#projects">Projects</a></li>
+      <li class="gray"><a href="#services">Services</a></li>
+    </ul>
+    <a id="boton-contacto" href="contact.html">Contact Us</a>
+    </div>
+  </nav>
+<nav id="nav-big">
     <a href="index.html"><img src="assets/logos/circle.svg" width="85" alt="logo" /></a>
     <ul id="nav-links">
       <li class="gray"><a href="index.html">Home</a></li>
@@ -16,7 +39,6 @@
     </ul>
     <a id="boton-contacto" href="contact.html">Contact Us</a>
   </nav>
-
   <section id="hero">
     <div id="hero-left">
       <h1>Empower Your Business With Stunning Design!</h1>
@@ -33,11 +55,11 @@
   </section>
 
   <div id="logos">
-    <a href="#"><img src="assets/logos/airbnb-logo.svg" alt="Airbnb" /></a>
-    <a href="#"><img src="assets/logos/google-logo.svg" alt="Google" /></a>
-    <a href="#"><img src="assets/logos/microsoft-logo.svg" alt="Microsoft" /></a>
-    <a href="#"><img src="assets/logos/fedex-logo.svg" alt="FedEx" /></a>
-    <a href="#"><img src="assets/logos/amazon-logo.svg" alt="Amazon" /></a>
+    <a href="https://www.airbnb.com/"><img src="assets/logos/airbnb-logo.svg" alt="Airbnb" /></a>
+   <a href="https://www.google.com/"><img src="assets/logos/google-logo.svg" alt="Google" /></a>
+    <a href="https://www.microsoft.com/"><img src="assets/logos/microsoft-logo.svg" alt="Microsoft" /></a>
+    <a href="https://www.fedex.com/"><img src="assets/logos/fedex-logo.svg" alt="FedEx" /></a>
+    <a href="https://www.amazon.com/"><img src="assets/logos/amazon-logo.svg" alt="Amazon" /></a>
   </div>
 
   <section id="projects" class="main-section">
@@ -69,27 +91,33 @@
       </article>
     </div>
   </section>
+ <section id="testimonial-container">
+      <img src="assets/testimonial-section/memoji-1.png" id="corner-img-top-left" class="hidden-emojis" alt="m1" />
+      <img src="assets/testimonial-section/memoji-2.png" id="corner-img-top-right"class="hidden-emojis" alt="m2" />
+      <img src="assets/testimonial-section/memoji-3.png" id="corner-img-bottom-left"class="hidden-emojis" alt="m3" />
+      <img src="assets/testimonial-section/memoji-4.png" id="corner-img-bottom-right" class="hidden-emojis"alt="m4" />
 
-  <section class="testimonial-container">
-    <div class = hidden-emojis>
-    <img src="assets/testimonial-section/memoji-1.png" class="corner-img top-left" alt="m1" />
-    <img src="assets/testimonial-section/memoji-2.png" class="corner-img top-right" alt="m2" />
-    <img src="assets/testimonial-section/memoji-3.png" class="corner-img bottom-left" alt="m3" />
-    <img src="assets/testimonial-section/memoji-4.png" class="corner-img bottom-right"  alt="m4" />
-    </div>
-    <div class="testimonial-content">
-      <h2>Hear What Our Clients Have To Say</h2>
-      <p class="testimonial-text">"Circle helped us through every stage of our startup. We really enjoyed working with you."</p>
-      <div class="profile-info">
-        <img src="assets/testimonial-section/profile.png" alt="Kristin" />
-        <div class="user-data">
-          <p id="user-name">Kristin Watson</p>
-          <p id="web">Booking.com</p>
+      <div class="testimonial-content">
+        <div class="testimonial-text">
+          <h2>Hear What Our Clients Have To Say</h2>
+          <br>
+          <p>
+            "Circle helped us through every stage of our startup. <br />
+            We really enjoyed working with you."
+          </p>
+        </div>
+
+        <div class="profile-content">
+          <div class="profile-info">
+            <img src="assets/testimonial-section/profile.png" alt="Kristin" />
+            <div class="user-data">
+              <p id="user-name">Kristin Watson</p>
+              <p id="web">Booking.com</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-
+    </section>
   <section id="services" class="main-section">
     <h3>Our services</h3>
     <div class="grid-layout">
@@ -124,15 +152,18 @@
     <h3>Do you have any questions?</h3>
     <p>Let us help you!</p>
     <div id="newsletter-form">
-      <input type="email" placeholder="Enter your email" />
+        
+      <div id="email">
+      <input type="email" placeholder="Enter your email"/>
+      <img id="email-icon" src="./assets/newsletter/icons/mail.svg" alt="mail">
+      </div>
       <button>Subscribe</button>
     </div>
   </section>
-
+<a href="#" id="arrow"> </a>
   <footer>
     <div class="footer-brand">
-      <img src="assets/logos/circle.svg" alt="logo" />
-      <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+    <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
     </div>
     <div id="footer-links">
       <a href="#">Team</a>
@@ -143,6 +174,6 @@
       <a href="#">Privacy Policy</a>
     </div>
   </footer>
-  <script src="js/js.js"></script>
+   <script src="js/js.js"></script>
  </body>
 </html>
